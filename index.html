@@ -40,21 +40,21 @@
 </head>
 <body>
     <!-- Header Part Start -->
-    <header class="container mx-auto">
+    <header class="container mx-auto px-6 lg:px-24">
 
       <!-- Banner Part Start -->
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
-          <div>
+      <div class="mt-6 lg:mt-12">
+        <div class="flex flex-col lg:flex-row">
+          <div class="flex flex-col justify-center ">
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold font-manrope">
               It's good <br>tea time at The<br>Tea House
             </h1>
             <p class="py-6 font-manrope text-lg font-medium text-[#777]">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
-            <button class="btn btn-primary font-manrope text-xl font-bold text-[#fff] uppercase px-5">Explore More</button>
+            <a class="btn font-manrope text-xl font-bold text-[#fff] uppercase px-5 w-3/4 lg:w-2/4 bg-gradient-to-r from-[#FF8938] to-[#F00]">Explore More <i class="fa-solid fa-turn-up"></i></a>
           </div>
 
           <div>
-            <img src="images/banner.png" alt="banner" class="max-w-sm"/>
+            <img src="images/banner.png" alt="banner" class=""/>
             <div class="-mt-16 flex items-center gap-4 rounded-xl drop-shadow-lg bg-slate-50 p-5 w-56">
                <i class="fa-solid fa-star text-3xl text-amber-400"></i>
               <div>
@@ -72,10 +72,10 @@
     <!-- Header Part End -->
 
     <!-- Main Part Star -->
-    <main class="container mx-auto lg:px-24">
+    <main class="container mx-auto px-6 lg:px-24">
 
       <!-- Feature Section Part Start -->
-      <section class="text-center mt-32">
+      <section class="text-center mt-4 lg:mt-32">
         <h2 class="text-5xl font-extrabold text-[#1C1C1C] pb-5"> Our Featured Products</h2>
         <p class="font-medium text-base text-[#777] pb-12">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br> by injected humour, or randomised words which don't look even slightly believable.</p>
         <!-- Featured Tea Card Container -->
@@ -121,7 +121,7 @@
       <!-- Feature Section Part End -->
 
       <!-- Great Tea Fresh Tea Section Part Start -->
-      <section class="mt-32 flex gap-12 flex-col lg:flex-row">
+      <section class=" mt-6 lg:mt-32 flex gap-12 flex-col lg:flex-row">
         <!-- Left Div -->
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 flex-1">
           <div class="h-36 rounded-xl bg-gradient-to-r from-[#F00] to-[#FF8938] opacity-10"></div>
@@ -142,7 +142,7 @@
       <!-- Great Tea Fresh Tea Section Part End-->
 
       <!-- Customer Review Part Start -->
-      <section class="mt-32 flex gap-12 flex-col lg:flex-row rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+      <section class="mt-6 lg:mt-32 flex gap-12 flex-col lg:flex-row rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
         <div class="flex items-center lg:pr-28">
           <div>
             <h3 class="font-manrope text-5xl font-extrabold text-[#f4f4f4] pb-5">Meet Our Super <br> Clients</h3>
@@ -190,7 +190,7 @@
       <!-- Customer Review Part End -->
 
       <!-- News And Eevent Part Start -->
-      <section class="mt-32 text-center">
+      <section class=" my-6 lg:my-32 text-center">
         <h2 class="text-5xl font-extrabold text-[#1C1C1C] pb-5">News & Events</h2>
         <p class="font-medium text-base text-[#777] pb-12">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br> by injected humour, or randomised words which don't look even slightly believable.</p>
         <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -235,8 +235,64 @@
     <!-- Main Part End -->
 
     <!-- Footer Part Start -->
-    <footer>
+    <footer class="p-10 bg-gradient-to-r from-[#FF00001A] to-[#FF89381A]">
+      <div class="container mx-auto lg:px-24 ">
 
+        <!-- Get Ready Part Start -->
+        <div class="flex items-center justify-between
+         pb-12 lg:pb-24">
+          <img src="images/cup.png" alt="cup">
+          <div class="flex flex-col lg:flex-row items-center lg:gap-10">
+            <p class="font-manrope font-medium text-xl text-[#494949]">Ready to get strated?</p>
+            <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] px-6 py-4 font-manrope font-bold text-white">Get Strated</button>
+          </div>
+        </div>
+        <!-- Get Ready Part End -->
+
+        <div class="grid grid-cols-1 space-y-6 lg:grid-cols-4">
+          <nav  class="flex flex-col space-y-4">
+            <header class="footer-title">Quick Links</header> 
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Insurance</a>
+            <a class="link link-hover">Privacy Policy</a>
+          </nav> 
+          <nav class="flex flex-col space-y-4">
+            <header class="footer-title">Our Service</header> 
+            <a class="link link-hover">Life Insurance</a>
+            <a class="link link-hover">Car Insurance</a>
+            <a class="link link-hover">Health Insurance</a>
+            <a class="link link-hover">House Insurance</a>
+          </nav> 
+          <nav class="flex flex-col space-y-4">
+            <header class="footer-title">Help</header> 
+            <a class="link link-hover">FAQs</a>
+            <a class="link link-hover">Contact Us</a>
+          </nav> 
+          <form class="flex flex-col space-y-4">
+            <fieldset class="form-control w-80">
+              <label class="label">
+                <span class="label-text">Enter your email address</span>
+              </label> 
+              <div class="">
+                <input type="text" placeholder="Email address" class="bg-transparent border-b border-black outline-none"/> 
+                <button class="btn rounded-full bg-gradient-to-r from-[#FF8938] to-[#F00] text-white"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <!-- Footer Social Part Start -->
+                <div class="mt-10 flex gap-6 text-2xl">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <!-- Footer Social Part End -->
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <aside class="text-center mt-7 lg:mt-14">
+          <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        </aside>
+      </div>
     </footer>
     <!-- Footer Part End -->
 </body>
